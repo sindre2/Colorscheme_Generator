@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #1C1C1C;
+}
+
+/* General settings */
+
+.container
+{
+    width: 50%;
+    height: 70%;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+
+    margin: auto;
+
+    border: 2px red solid;
+}
+
+
+header, footer
+{    
+    display: flex;
+}
+
+header, footer, #generator, header > button, header > input
+{
+    background-color: white;
+}
+
+/* --- END --- */
+
+
+/* --- Header settings --- */
+
+header
+{
+    justify-content: space-around;
+    align-items: center;
+
+    height: 13%;
+}
+
+#generator, header > button, header > input
+{
+    height: 60%;
+    border-radius: 4px;
+    border: 2px solid grey;
+
+    cursor: pointer;
+}
+
+header > button:hover, header > input:hover
+{
+    background-color: greenyellow;
+    color: darkblue;
+    text-shadow: 1px 1px black;
+}
+
+#generator
+{
+    width: 40%;
+}
+
+header > button
+{
+    width: 30%;
+}
+
+/* --- END --- */
+
+
+/* --- Main settings --- */
+
+main
+{
+    display: flex;
+    height: 77%;
+}
+
+/* --- END --- */
+
+
+/* --- Footer settings --- */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+
+    height: 10%;
+
+}
+
+/* --- END --- */
