@@ -1,11 +1,5 @@
 /* --- Constants and variables section --- */
 
-const hexOne = document.getElementById("hex-1");
-const hexTwo = document.getElementById("hex-2");
-const hexThree = document.getElementById("hex-3");
-const hexFour = document.getElementById("hex-4");
-const hexFive = document.getElementById("hex-5");
-
 const banan = document.querySelector("main");
 const eple = document.querySelector("footer");
 
@@ -23,7 +17,7 @@ function decider()
     if (colors)
     {
     banan.innerHTML = "";
-    eple.innerHTML = "";
+    
     schemeSelector();
     } else
     {
@@ -66,7 +60,7 @@ function getColorScheme (end)
                 `<div class="col" style="background-color: ${temp.colors[x].hex.value}">
                 </div>`;
 
-                document.getElementById("hex-" + x).textContent +=  `${temp.colors[x].hex.value}`;
+                document.getElementById("hex-" + x).textContent =  `${temp.colors[x].hex.value}`;
                  
             };
 
@@ -77,40 +71,9 @@ function getColorScheme (end)
 
 /* --- END --- */
 
-
-
-// short.addEventListener("click", function()
-// {
-
-// })
-
-hexOne.addEventListener("click", function()
+document.querySelectorAll('.hexCode').forEach(item => {
+    item.addEventListener('click', event => 
     {
-        navigator.clipboard.writeText(hexOne.textContent);
-        alert("Copied the text: " + hexOne.textContent);
-    });
-
-hexTwo.addEventListener("click", function()
-    {
-        navigator.clipboard.writeText(hexTwo.textContent);
-        alert("Copied the text: " + hexTwo.textContent);
-    });
-
-hexThree.addEventListener("click", function()
-    {
-        navigator.clipboard.writeText(hexThree.textContent);
-        alert("Copied the text: " + hexThree.textContent);
-    });
-
-hexFour.addEventListener("click", function()
-    {
-        navigator.clipboard.writeText(hexFour.textContent);
-        alert("Copied the text: " + hexFour.textContent);
-    });
-
-hexFive.addEventListener("click", function()
-    {
-        navigator.clipboard.writeText(hexFive.textContent);
-        alert("Copied the text: " + hexFive.textContent);
-    });
-
+        navigator.clipboard.writeText(item.textContent);
+        alert("Copied the text: " + item.textContent);
+    })});
