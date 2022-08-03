@@ -1,4 +1,4 @@
-html, body {
+html, body, .col, .foot-col {
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,7 @@ body
 }
 
 
-header, footer
+header, footer, main, #addHere, #footer-input
 {    
     display: flex;
 }
@@ -83,8 +83,19 @@ header > button
 
 main
 {
-    display: flex;
     height: 77%;
+    flex-direction: row;
+}
+
+#addHere
+{
+    width: 100%;
+}
+
+.col
+{
+    width: 20%;
+    height: 100%;
 }
 
 /* --- END --- */
@@ -94,11 +105,14 @@ main
 
 footer
 {
-    display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
     height: 10%;
+}
 
+footer > p:hover
+{
+    color: slateblue;
+    cursor: pointer;
 }
 
 /* --- END --- */
