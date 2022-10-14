@@ -1,2 +1,3 @@
-# Module-9-project
-READ THIS LOL
+# Colorscheme_Generator
+
+Select a color then choose the desired theme to recieve a color palette. The app communicates with an API.
