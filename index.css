@@ -12,7 +12,7 @@ body
 
 .container
 {
-    width: 50%;
+    width: 75%;
     height: 70%;
 
     position: absolute;
@@ -23,7 +23,7 @@ body
 
     margin: auto;
 
-    border: 2px red solid;
+    border: 2px rgba(255, 0, 0, 0.444) solid;
 }
 
 
@@ -47,7 +47,7 @@ header
     justify-content: space-around;
     align-items: center;
 
-    height: 13%;
+    min-height: 13%;
 }
 
 #generator, header > button, header > input
@@ -98,6 +98,12 @@ main
     height: 100%;
 }
 
+.hexCode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* --- END --- */
 
 
@@ -106,7 +112,7 @@ main
 footer
 {
     justify-content: space-around;
-    height: 10%;
+    min-height: 10%;
 }
 
 footer > p:hover
@@ -116,3 +122,38 @@ footer > p:hover
 }
 
 /* --- END --- */
+
+@media screen and (max-width: 1045px) {
+    .container {
+        height: 75%;
+    }
+    header {
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .container {
+        height: 85%;
+    }
+}
+@media screen and (max-height: 450px) {
+    .container {
+        height: 95%;
+    }
+    header {
+        height: 25%;
+    }
+    main {
+        height: 50%;
+    }
+    footer {
+        height: 25%;
+    }
+}
